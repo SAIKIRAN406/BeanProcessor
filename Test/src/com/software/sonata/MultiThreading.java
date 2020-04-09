@@ -5,7 +5,9 @@ class Share {
 
 	 //void SharedMethod()  // (Inconsistent Output)
 	synchronized void SharedMethod()
+
 	{
+		System.out.println(" Thread:: "   +Thread.currentThread().getId());
 		i = 10;
 		System.out.println("Currently Running Thread:" +Thread.currentThread().getName()+ ":" +i);
 		i = 20;
